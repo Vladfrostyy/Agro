@@ -632,7 +632,7 @@ iframe {
   gap: 20px;
 }
 .footer__container {
-  width: 100%;
+  padding: 0px 15px;
 }
 ._container {
 }

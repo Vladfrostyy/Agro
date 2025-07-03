@@ -79,24 +79,24 @@
     .whatsReady__title,
     .aboutModel__title,
     .aboutNumbs__title{
-        font-size: 36px;
+        font-size: 32px;
         letter-spacing: -1.86px;
-        line-height: 34px;
+        line-height: 28px;
     }
     .gallery__subtitle,
     .aboutModel__subtitle,
     .aboutNumbs__group-subtitle{
-        font-size: 24px;
-        line-height: 26px;
+        font-size: 20px;
+        line-height: 20px;
     }
     .hero__text,
-.aboutUs__text,
-.aboutModel__text,
-.aboutNumbs__text,
-.whatsReady__text,
-.footer__about-text{
-    font-size: 18px;
-    line-height: 20px;
+    .aboutUs__text,
+    .aboutModel__text,
+    .aboutNumbs__text,
+    .whatsReady__text,
+    .footer__about-text{
+        font-size: 14px;
+        line-height: 18px;
 }
 .aboutUs__row{
     flex-direction: column;
@@ -105,7 +105,7 @@
     font-size: 42px;
 }
 .video__body{
-    height: 65vh;
+    height: 100vh;
 }
 .formMain{
     width: 100%;
@@ -126,5 +126,8 @@
 }
 .aboutNumbs__aside{
     flex-direction: column;
+}
+.aboutModel__container{
+    padding: 50px 15px;
 }
 }
