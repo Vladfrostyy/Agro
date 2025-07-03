@@ -85,36 +85,6 @@ a {
           flex-direction: column;
   min-height: 100%;
 }
-
-.header {
-  position: relative;
-  z-index: 2;
-}
-.header__container {
-  max-width: inherit;
-  min-width: 1360px;
-  border-radius: 0 0 15px 15px;
-  padding: 22px 34px;
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.header__addition {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 30px;
-}
 iframe {
   width: 100%;
   height: 100vh;
@@ -140,20 +110,138 @@ iframe {
 }
 
 /*----------------------*/
+label{
+  display: none;
+}
+@media(max-width:900px){
+  .header__info{
+    font-size: 16px;
+  }
+  .header__link{
+    font-size: 16px;
+  }
+}
+nav {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > a img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  transition: .5s;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+label {
+  display: none;
+}
+
+#burger-toggle {
+  display: none;
+}
+
+@media (max-width: 784px) {
+  label {
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 30px;
+  }
+
+  label::after, label::before, label span {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: .3s;
+  }
+
+  label::before {
+    content: "";
+    top: 0;
+  }
+
+  label::after {
+    content: "";
+    bottom: 0;
+  }
+
+  label span {
+    top: 11px;
+  }
+
+  #burger-toggle:checked ~ label::after {
+    transform: rotate(45deg);
+    bottom: 10px;
+  }
+
+  #burger-toggle:checked ~ label::before {
+    transform: rotate(-45deg);
+    top: 12px;
+  }
+
+  #burger-toggle:checked ~ label span {
+    transform: rotate(-45deg);
+    top: 12px;
+  }
+
+  ul {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #151515;
+    padding-top: 350px;
+    z-index: -1;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0.5;
+    left: -100vw;
+    right: 100vw;
+    padding-bottom: 50px;
+  }
+
+  #burger-toggle:checked ~ ul {
+    left: 0;
+    right: 0;
+  }
+
+  li a {
+    font-size: 24px;
+  }
+}
 .header {
   background-color: transparent;
-}
-.header__container {
-}
-._container {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
 }
 .header__body {
+  width: 100%;
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-}
-.header__logo {
+} 
+.header__block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
 }
 .header__nav {
   display: flex;
@@ -164,6 +252,10 @@ iframe {
   gap: 20px;
 }
 .header__link {
+  color: #fff;
+}
+#burger-toggle{
+  display: none;
 }
 .header__info {
   display: flex;
@@ -175,6 +267,7 @@ iframe {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  color: #fff;
   align-items: flex-start;
   justify-content: flex-start;
 }
@@ -372,18 +465,28 @@ iframe {
   line-height: 100%; /* 36px */
   text-transform: uppercase;
 }
-.gallery__row {
+
+.gallery__aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.gallery__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.gallery__column-row {
   display: flex;
   gap: 10px;
   align-items: center;
 }
-.gallery__column,
-.gallery__row {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.gallery__column-horizontal {
 }
-.gallery__img {
+.gallery__imageVertical {
 }
 /*---------------------------*/
 .aboutNumbs {
@@ -484,6 +587,7 @@ iframe {
 }
 .form__row {
   display: flex;
+  gap: 20px;
   align-items: center;
   justify-content: space-between;
 }
@@ -576,10 +680,6 @@ iframe {
 .whatsReady {
   background-color: #fff;
   padding: 50px 0px;
-}
-.whatsReady__container {
-}
-._container {
 }
 .whatsReady__body {
   display: flex;

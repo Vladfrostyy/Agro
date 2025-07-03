@@ -40,6 +40,32 @@
         height: 100%;
         object-fit: cover;
     }
+    .gallery__aside {
+        flex-direction: column;
+      }
+      .gallery__column-row {
+        flex-direction: row;
+        display: flex
+;
+        object-fit: contain;
+        width: 50%;
+        /* flex-wrap: wrap; */
+        height: auto;
+        gap: 10px;
+        justify-content: center;
+      }
+      .gallery__column-row img{
+      }
+      .gallery__image{
+        width: 100%;
+        border-radius: 10px;
+        height: 100%;
+        object-fit: cover;
+    }
+    .gallery__imageVertical{
+        width: 100%;
+        height: 400px;
+    }
 }
 @media(max-width:860.98px){
     .footer__row{
@@ -73,6 +99,7 @@
 }
 }
 @media(max-width:600.98px){
+    
     .whyUs__title,
     .aboutUs__title,
     .gallery__title,
@@ -86,7 +113,7 @@
     .gallery__subtitle,
     .aboutModel__subtitle,
     .aboutNumbs__group-subtitle{
-        font-size: 20px;
+        font-size: 24px;
         line-height: 20px;
     }
     .hero__text,
@@ -95,7 +122,7 @@
     .aboutNumbs__text,
     .whatsReady__text,
     .footer__about-text{
-        font-size: 14px;
+        font-size: 16px;
         line-height: 18px;
 }
 .aboutUs__row{
@@ -129,5 +156,14 @@
 }
 .aboutModel__container{
     padding: 50px 15px;
+}
+.gallery__column-row{
+    flex-direction: column;
+    width: 100%;
+}
+.gallery__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 }

@@ -16,30 +16,58 @@
     <div class="wrap">
         <header class="header">
             <div class="header__container _container">
-                <div class="header__body">
+                <!-- <div class="header__body">
                     <div class="header__logo">
                         <img src="./images/logo.png" alt="">
                     </div>
-                    <nav class="header__nav">
-                        <ul class="header__list">
-                            <li><a href="" class="header__link">Main</a></li>
-                            <li><a href="" class="header__link">About Us</a></li>
-                            <li><a href="" class="header__link">Gallery</a></li>
-                            <li><a href="" class="header__link">Contacts</a></li>
-                        </ul>
-                    </nav>
-                    <div class="header__info">
-                        <div class="header__phone">
-                            <h3 class="header__callTitleInfo">Call anytime</h3>
-                            <a href="" class="header__callNumb">+ 98 (123) - 4567</a>
-                        </div>
-                        <div class="header__line"></div>
-                        <div class="header__locationInfo">
-                            <h3 class="header__locationTitle">Location</h3>
-                            <h4 href="" class="header__location">Lorem ipsum dolor</h4>
-                        </div>
-                    </div>
-                </div>
+                    <input type="checkbox" id="burger-toggle">
+                    <label for="burger-toggle">
+                        <span></span>
+                    </label>
+                        <nav class="header__nav">
+                            <ul class="header__list">
+                                <li><a href="" class="header__link">Main</a></li>
+                                <li><a href="" class="header__link">About Us</a></li>
+                                <li><a href="" class="header__link">Gallery</a></li>
+                                <li><a href="" class="header__link">Contacts</a></li>
+                                <div class="header__info">
+                                    <div class="header__phone">
+                                        <h3 class="header__callTitleInfo">Call anytime</h3>
+                                        <a href="" class="header__callNumb">+ 98 (123) - 4567</a>
+                                    </div>
+                                    <div class="header__line"></div>
+                                    <div class="header__locationInfo">
+                                        <h3 class="header__locationTitle">Location</h3>
+                                        <h4 href="" class="header__location">Lorem ipsum dolor</h4>
+                                    </div>
+                                </div>
+                            </ul>
+                        </nav>
+                        
+                </div> -->
+                <nav>
+                    <a href="/">
+                      <img src="./images/logo.png" alt="">
+                    </a>
+                    <input id="burger-toggle" type="checkbox">
+                    <label for="burger-toggle">
+                      <span></span>
+                    </label>
+                    <ul class="header__list">
+                      <li>
+                        <a href="/" class="header__link">Main</a>
+                      </li>
+                      <li>
+                        <a href="/" class="header__link">About Us</a>
+                      </li>
+                      <li>
+                        <a href="/" class="header__link">Gallery</a>
+                      </li>
+                      <li>
+                        <a href="/" class="header__link">Contacts</a>
+                      </li>
+                    </ul>
+                  </nav>
             </div>
         </header>
         <section class="hero">
@@ -89,19 +117,19 @@
                     </div>
                     <div class="aboutNumbs__aside">
                         <div class="aboutNumbs__group">
-                            <h3 class="aboutNumbs__group-title">You invest </h3>
+                            <h3 class="aboutNumbs__group-title">1.You invest </h3>
                             <h4 class="aboutNumbs__group-subtitle">In the construction and launch of greenhouse facilities</h4>
                         </div>
                         <div class="aboutNumbs__group">
-                            <h3 class="aboutNumbs__group-title">You receive </h3>
+                            <h3 class="aboutNumbs__group-title">2.You receive </h3>
                             <h4 class="aboutNumbs__group-subtitle">A share and a fixed percentage of the profit</h4>
                         </div>
                         <div class="aboutNumbs__group">
-                            <h3 class="aboutNumbs__group-title">Fully legal</h3>
+                            <h3 class="aboutNumbs__group-title">3.Fully legal</h3>
                             <h4 class="aboutNumbs__group-subtitle">With company registration in the EU</h4>
                         </div>
                         <div class="aboutNumbs__group">
-                            <h3 class="aboutNumbs__group-title">Business plan</h3>
+                            <h3 class="aboutNumbs__group-title">4.Business plan</h3>
                             <h4 class="aboutNumbs__group-subtitle">Regular reports, and photo/video updates from the site</h4>
                         </div>
                     </div>
@@ -126,27 +154,20 @@
             <div class="gallery__body">
                 <h2 class="gallery__title">Our Greenhouses</h2>
                 <h3 class="gallery__subtitle">Fully functional<br> Real harvests — not promises</h3>
-                <div class="gallery__block">
+                <div class="gallery__aside">
                     <div class="gallery__column">
-                        <div class="gallery__row">
-                            <div class="gallery__img">
-                                <img src="./images/Gallery/gallery1.png" alt="">
-                            </div>
-                            <div class="gallery__img">
-                                <img src="./images/Gallery/gallery4.png" alt="">
-                            </div>
+                        <div class="gallery__column-row">
+                            <img class="gallery__image" src="./images/Gallery/gallery1.png" alt="">
+                            <img class="gallery__image" src="./images/Gallery/gallery4.png" alt="">
                         </div>
-                        <div class="gallery__img">
-                            <img src="./images/Gallery/gallery2.png" alt="">
+                        <div class="gallery__column-horizontal">
+                            <img class="gallery__image" src="./images/Gallery/gallery2.png" alt="">
                         </div>
                     </div>
-                    <div class="gallery__column-two">
-                        <div class="gallery__img">
-                            <img src="./images/Gallery/gallery3.png" alt="">
-                        </div>
+                    <div class="gallery__imageVertical">
+                        <img class="gallery__image" src="./images/Gallery/gallery3.png" alt="">
                     </div>
                 </div>
-                
             </div>
         </div>
       </section>
