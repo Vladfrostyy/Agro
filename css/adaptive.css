@@ -1,0 +1,130 @@
+@media(max-width:1098.98px){
+    .aboutUs__body{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .aboutUs__text,
+    .aboutUs__title{
+        max-width: 90%;
+    }
+    .aboutUs__image-column,
+    .aboutUs__img,
+    .aboutUs__row{
+        width: 100%;
+    }
+    .aboutUs__img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .whatsReady__line{
+        display: none;
+    }
+    .whatsReady__row{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .whatsReady__text{
+        max-width: 300px;
+    }
+    .form__row{
+        flex-direction: column;
+    }
+    .form__body{
+        max-width: none;
+        padding: 30px 0px;
+    }
+    .form__image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+@media(max-width:860.98px){
+    .footer__row{
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer__about-text{
+        text-align: center;
+    }
+    .footer__list{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .footer__about {
+        align-items: center;
+        justify-content: center;
+    }
+
+.footer__list-agroGlory,
+.footer__list-resourceCenter,
+.footer__list-customerSupport {
+    align-items: center;
+    justify-content: center;
+}
+.whyUs__title{
+    font-size: 36px;
+    line-height: 40px;
+}
+.whyUs__link{
+    font-size:16px;
+}
+}
+@media(max-width:600.98px){
+    .whyUs__title,
+    .aboutUs__title,
+    .gallery__title,
+    .whatsReady__title,
+    .aboutModel__title,
+    .aboutNumbs__title{
+        font-size: 36px;
+        letter-spacing: -1.86px;
+        line-height: 34px;
+    }
+    .gallery__subtitle,
+    .aboutModel__subtitle,
+    .aboutNumbs__group-subtitle{
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .hero__text,
+.aboutUs__text,
+.aboutModel__text,
+.aboutNumbs__text,
+.whatsReady__text,
+.footer__about-text{
+    font-size: 18px;
+    line-height: 20px;
+}
+.aboutUs__row{
+    flex-direction: column;
+}
+.hero__title{
+    font-size: 42px;
+}
+.video__body{
+    height: 65vh;
+}
+.formMain{
+    width: 100%;
+}
+.formLink{
+    width: 100%;
+    font-size: 14px;
+}
+.formButton{
+    font-size: 14px;
+}
+.footer__lists{
+    flex-direction: column;
+    align-items: center;
+}
+.footer__reserved{
+    font-size: 12px;
+}
+.aboutNumbs__aside{
+    flex-direction: column;
+}
+}
